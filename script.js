@@ -38,7 +38,7 @@ let prevUrl = [1,21];       //id pokemonów jakie zostaną stworzone po kliknię
 let filter = null;          //obecnie używany filtr
 
 
-function renderPokemon(id){ //pokemona, kożystając z listy 'fetchPokemons'
+function renderPokemon(id){ //stwórz pokemona, kożystając z listy 'fetchPokemons'
     let types="";
     for(type in fetchedPokemons[id-1].types){
         types += "<li>" + fetchedPokemons[id-1].types[type] + "</li>";
